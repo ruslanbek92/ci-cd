@@ -9,6 +9,7 @@ import PlantPage from './pages/plant-page';
 class Router {
   var a;
   var b;
+  var c;
   static catalogPage: CatalogPage;
   static cartPage: CartPage;
   static plantPage: PlantPage;
