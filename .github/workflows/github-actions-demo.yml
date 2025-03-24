@@ -1,5 +1,10 @@
 name: CD/CI Pipeline
-on: [push]
+on: 
+  push:
+    branches: 
+      - 'feature/**'
+  pull_request:
+    branches: [main]    
 jobs:
   init:
     runs-on: ubuntu-latest
