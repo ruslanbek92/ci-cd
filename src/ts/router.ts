@@ -12,6 +12,7 @@ class Router {
   static plantPage: PlantPage;
   static errorPage: ErrorPage;
   var abc;
+  var abc;
   constructor(cart: Cart) {
     Router.catalogPage = new CatalogPage(cart);
     Router.cartPage = new CartPage(cart);
