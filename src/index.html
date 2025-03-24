@@ -177,20 +177,25 @@
           <h3 class="filter__title">Price</h3>
           <div class="range">
             <div class="range__value">
-              <span>min</span>
+              <label>
+               <span>min</span>
               <input type="number" class="input-min" value="1" max="100">
               <span>$</span>
+              </label>
               <div class="range__separator">-</div>
-              <span>max</span>
+              <label >
+                <span>max</span>
               <input type="number" class="input-max" value="100" max="100">
               <span>$</span>
+              </label>
             </div>
             <div class="range__slider slider">
               <div class="slider__progress"></div>
             </div>
             <div class="range__range-input">
-              <input type="range" class="range-min" min="1" max="106" value="1" step="1">
-              <input type="range" class="range-max" min="1" max="100" value="100" step="1">
+             
+                <input type="range" class="range-min" min="1" max="106" value="1" step="1" aria-label="min">
+                <input type="range" class="range-max" min="1" max="100" value="100" step="1" aria-label="max">
             </div>
           </div>
         </div>
@@ -207,18 +212,26 @@
           <h3 class="filter__title">Stock</h3>
           <div class="range">
             <div class="range__value">
-              <span>min</span>
+              <label>
+                <span>min</span>
               <input type="number" class="input-min" value="1" max="65">
+              </label>
               <div class="range__separator">-</div>
-              <span>max</span>
+              <label>
+                <span>max</span>
               <input type="number" class="input-max" value="65" max="65">
+              </label>
             </div>
             <div class="range__slider slider">
               <div class="slider__progress"></div>
             </div>
             <div class="range__range-input">
-              <input type="range" class="range-min" min="1" max="69" value="1" step="1">
-              <input type="range" class="range-max" min="1" max="65" value="65" step="1">
+              
+                <input type="range" class="range-min" min="1" max="69" value="1" step="1" aria-label="min">
+              
+             
+                <input type="range" class="range-max" min="1" max="65" value="65" step="1" aria-label="max">
+              
             </div>
           </div>
         </div>
@@ -243,7 +256,8 @@
               </div>
             </div>
             <div class="found-products">Found: <div><span class="found-products__num">24</span><span class="found-products__num"> / 24</span></div></div>
-            <input type="text" placeholder="Search" class="sort-input">
+            
+              <input type="text" placeholder="Search" class="sort-input" aria-label="Search">
           </div>
     
           <div class="products__layout layout">
