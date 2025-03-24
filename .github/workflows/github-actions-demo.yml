@@ -4,7 +4,8 @@ on:
     branches: 
       - 'feature/**'
   pull_request:
-    branches: [main]    
+    branches: 
+      - 'feature/**'  
 jobs:
   init:
     runs-on: ubuntu-latest
